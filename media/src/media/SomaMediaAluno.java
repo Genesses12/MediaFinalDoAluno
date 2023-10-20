@@ -7,7 +7,7 @@ public class SomaMediaAluno {
 		Scanner sc = new Scanner(System.in);
 		double nota0, nota1, nota2, nota3;
 		double media;
-		double faltou = 7;
+		double ReprovadoPorApenas = 7;
 
 		System.out.println("Nota do Primeiro Bimestre");
 		nota0 = sc.nextDouble();
@@ -20,9 +20,9 @@ public class SomaMediaAluno {
 		media = (nota0 + nota1 + nota2 + nota3) / 4;
 		System.out.println("media do aluno = " + media);
 		sc.close();
-		faltou = (faltou - media);
+		ReprovadoPorApenas = (ReprovadoPorApenas - media);
 		if (media < 7) {
-			System.out.println("Aluno reprovado, por apenas " + faltou);
+			System.out.println("Aluno reprovado, por apenas " + ReprovadoPorApenas + " pontos");
 		} else {
 			System.out.println("Aprovado com sucesso");
 		}
