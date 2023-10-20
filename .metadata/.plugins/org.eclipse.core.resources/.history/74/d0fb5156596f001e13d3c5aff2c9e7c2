@@ -1,0 +1,24 @@
+package media;
+
+import java.util.Scanner;
+
+public class mediaAluno {
+public static void main (String[] args) {
+	Scanner sc = new Scanner(System.in);
+	double x , y, media;
+	
+	System.out.println("Primeiro Numero");
+	x = sc.nextDouble();
+	System.out.println("Segundo numero");
+	y = sc.nextDouble();
+	media = (x + y) / 2.0;
+	System.out.println("média do aluno =" + media);
+	sc.close();
+	 if(media < 6){
+		 System.out.println("Aluno reprovado");
+	 } else {
+		 System.out.println("Aprovado com sucesso");
+	 }
+	
+}
+}
